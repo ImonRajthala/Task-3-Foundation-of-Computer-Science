@@ -44,3 +44,13 @@ Membership.JoinDate
 FROM Membership
 JOIN Student ON Membership.StudentID = Student.StudentID
 JOIN Club ON Membership.ClubID = Club.ClubID;
+--------------------------------------------------------------------
+--Task 6: Reflection
+--How Normalization Reduces Data Repetition
+--Normalization organizes data into separate tables based on logical relationships. By separating student information and club information, repeated data is eliminated.
+--This reduces storage requirements and improves database performance.
+--How Normalization Improves Data Accuracy
+--When information is stored in one place, updates only need to be performed once. This prevents inconsistencies and ensures that all records remain accurate.
+--Why JOIN Operations Are Necessary After Normalization
+--Because data is stored in multiple tables, JOIN operations are required to combine related information.
+--JOIN queries allow the database to retrieve meaningful results by linking tables using primary and foreign keys.
